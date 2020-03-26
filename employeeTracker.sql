@@ -1,0 +1,30 @@
+DROP DATABASE IF EXISTS empTrackerDB;
+
+CREATE DATABASE empTrackerDB;
+
+USE empTrackerDB;
+
+CREATE TABLE department (
+  id INT NOT NULL AUTO_INCREMENT,
+  name VARCHAR(30) NOT NULL,
+  PRIMARY KEY (id)
+);
+
+CREATE TABLE role (
+  id INT NOT NULL AUTO_INCREMENT,
+  title VARCHAR(30) NOT NULL,
+  sal
+  ary DECIMAL(10,2) NOT NULL,
+  department INT NOT NULL,
+  PRIMARY KEY (id)
+);
+
+CREATE TABLE employee (
+  id INT NOT NULL AUTO_INCREMENT,
+  first_name VARCHAR(30) NOT NULL,
+  last_name VARCHAR(30) NOT NULL,
+  role_id VARCHAR() NOT NULL,
+  manager_id INT NOT NULL,
+  PRIMARY KEY (id)
+);
+
